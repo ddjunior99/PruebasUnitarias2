@@ -40,7 +40,6 @@ namespace TestPruebasUnitarias
 		{
 
 			bool esValida = ValidadorUsuario.EsContrasenyaValida("");
-
 			Assert.IsFalse(esValida);
 
 		}
