@@ -8,5 +8,14 @@
         {
 
         }
-    }
+		[TestMethod]
+		public void ContraseñaValida()
+		{
+			
+			bool esValida = ValidadorUsuario.EsContrasenyaValida(contraseña);
+			
+			Assert.IsTrue(esValida);
+
+		}
+	}
 }
