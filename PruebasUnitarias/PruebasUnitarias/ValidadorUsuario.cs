@@ -6,6 +6,7 @@ namespace PruebasUnitarias
 {
 	public class ValidadorUsuario
 	{
+		public static long CalcularFactorial(int numero) { }
 		public static bool EsContrasenyaValida() { }
 	}
 }
