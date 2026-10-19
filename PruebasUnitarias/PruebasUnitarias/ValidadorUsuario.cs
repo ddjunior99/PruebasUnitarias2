@@ -24,9 +24,6 @@ namespace PruebasUnitarias
 
 			}
 		}
-		public static bool EsContrasenyaValida() { }
-
-		public static long CalcularFactorial(int numero) { }
 		public static bool EsContrasenyaValida(string contrasenya) 
 		{
 			if (string.IsNullOrEmpty(contrasenya) || contrasenya.Length < 8 || !contrasenya.Contains("#"))
