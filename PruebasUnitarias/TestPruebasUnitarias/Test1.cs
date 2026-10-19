@@ -7,8 +7,6 @@ using PruebasUnitarias;
 
 namespace TestPruebasUnitarias
 {
-
-    [TestClass]
     public sealed class Test1
     {
         [TestMethod]
@@ -35,7 +33,6 @@ namespace TestPruebasUnitarias
 		{
 
 			bool esValida = ValidadorUsuario.EsContrasenyaValida("");
-
 			Assert.IsFalse(esValida);
 
 		}
