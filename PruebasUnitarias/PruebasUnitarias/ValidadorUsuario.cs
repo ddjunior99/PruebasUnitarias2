@@ -6,6 +6,7 @@ namespace PruebasUnitarias
 {
 	public class ValidadorUsuario
 	{
+
 		public static long CalcularFactorial(int numero)
 		{
 			if (numero < 0)
@@ -24,5 +25,19 @@ namespace PruebasUnitarias
 			}
 		}
 		public static bool EsContrasenyaValida() { }
+
+		public static long CalcularFactorial(int numero) { }
+		public static bool EsContrasenyaValida(string contrasenya) 
+		{
+			if (string.IsNullOrEmpty(contrasenya) || contrasenya.Length < 8 || !contrasenya.Contains("#"))
+            {
+                return false;
+            }
+			else
+			{
+                return true;
+            }
+		}
+
 	}
 }
